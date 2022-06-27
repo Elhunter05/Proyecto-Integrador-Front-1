@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/* -----------------General configuration------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+}
+
+/* -----------------Header sections------------- */
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 180px;
+}
+
+.nav-item{
+    margin: 0px 28px;
+}
+
+/* -----------------Main sections------------- */
+.intro, .aboutUs{
+    margin: 100px 180px;
+}
+
+/* ---------------------------Intro---------------------------------- */
+
+.intro{
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.intro-item-1{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    /* border: 1px solid red; */
+    margin-right: 65px;
+}
+
+.intro-item-2{
+    width: 55%;
+    justify-content: flex-end;
+}
+
+.intro-item-2 img{
+        width: 100%;
+    }
+
+/* .intro-title{
+    border: 1px solid green;
+} */
+
+.intro-text{
+    margin: 30px 145px 30px 0px;
+    /* border: 1px solid blue; */
+    font-size: 1.035rem;
+}
+
+/* ---------------------------About Us---------------------------------- */
+
+.about-box-1{
+    width: 50%;
+    outline: 1px solid red;
+    flex-direction: column;
+}
+.about-box-1 p{
+    margin: 36px 220px 0px 0px;
+}
+
+.about-box-2{
+    width: 50%;
+    outline: 1px solid blue;
+}
+.about-box-2 ul{
+    flex-direction: column;
+}
+
+.about-item{
+    margin-bottom: 20px;
+}
+
+.about-item h4{
+    margin: 18px 10px;
+}
+
+span{
+    background-color: #F3603B;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 25px;
+    margin-right: 23px;
+}
+
+.about-text{
+    padding-left: 103px;
+    color: #B3B2B7;
+}
+
+/* ---------------------------Testimonials---------------------------------- */
+
+.testimonials{
+    margin: 100px 90px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials h2{
+    margin-bottom: 150px;
+}
+
+.test-cards{
+    outline: 1px solid blue;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.card{
+    flex-direction: column;
+    align-items: center;
+    /* outline: 1px solid green; */
+    /* margin: 38px 21px; */
+}
+
+.card img{
+    position: relative;
+    bottom: 75px;
+    margin: 0px 0px;
+}
+
+.card-bottom{
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-bottom p{
+    color: #B9B9C1;
+    margin: 21px 27px 39px 27px;
+}
+
+.dots{
+    justify-content: center;
+    margin: 35px 0px;
+}
+
+.dots input[type="radio"] {
+    appearance: none;
+    margin: 0px 5px;
+    color: white;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 0.07rem solid #F3603B;
+    border-radius: 50%;
+}
+
+.dots input:checked{
+    background-color: #F3603B;
+}
+
+.testimonials div button{
+    margin: 45px;
+}
+
+/* ---------------------------Main Bottom---------------------------------- */
+
+.simplify{
+    background-color: #F3613C;
+    color: white;
+    justify-content: space-around;
+    height: 224px;
+    align-items: center;
+}
+
+.simplify h2{
+    color: white;
+    width: 50%;
+    padding-right: 420px;
+    outline: 1px solid white;
+}
+
+.simplify button{
+    margin: 0;
+    color: #F3613C;
+    background-color: white;
+}
+
+/* -----------------Footer sections------------- */
+
+footer{
+    background-color: #1E1E26;
+    color: white;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.social, .footer-nav, .suscribe{
+    margin: 68px 0px;
+}
+
+.social{
+    /* margin: 67px 0px; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid white;
+}
+
+.logo-2{
+    /* margin-bottom: 67px; */
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid white;
+}
+
+.footer-nav{
+    flex-direction: column;
+}
+
+.footer-nav a{
+    color: white;
+    margin: 12px 0px;
+}
+
+.icons{
+    margin-top: 67px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands{
+    margin: 10px;
+    color: white;
+}
+
+.fa-brands:hover{
+    color: #F3603B;
+}
+
+/* .suscribe{
+    
+} */
+
+.subscription{
+    gap: 10px;
+}
+
+.go-btn{
+    padding: 14.5px 25.5px;
+}
+
+input[type="email"]{
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.go-btn:hover{
+    background-color: white;
+    color: #F3603B;
+}
+
+.copyright{
+    color: #8C8C94;
+    margin-top: 74px;
+}
+
+/* -----------------Tag styles------------- */
+
+i{
+    font-size: 2rem;
+}
+
+a{
+    color: #242E52;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F3613C;
+}
+
+button{
+    background-color: #F3603B;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size:  0.9rem;
+    font-weight: 400;
+    padding: 14.5px 35.5px;
+}
+
+button:hover{
+    background-color: #242E52;
+    color: #F3603B;
+}
+
+h1{
+    color: #232C50;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2{
+    color: #232851;
+    font-size: 2.5rem;
+}
+
+h4{
+    color: #323851;
+}
+
+p{
+    font-weight: 500;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* -----------------Media queries------------- */
+
+@media (max-width: 1439px) {
+    .desk-only{
+    display: none;
+    }
+    header, .intro, .aboutUs, .testimonials,  .simplify, footer{
+        margin: 50px 40px;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        margin: 0;
+        justify-content: center;
+    }
+    .intro-item-1, .intro-item-2{
+        width: 80%;
+        margin: 0;
+    }
+    .intro-item-1{
+        align-items: center;
+        outline: 1px solid red;
+        margin: 0;
+        justify-content: center;
+    }
+    .intro-title{
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-text{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .aboutUs, .testimonials, .simplify{
+        flex-direction: column;
+    }
+    .about-box-1, .about-box-2{
+        width: 100%;
+    }
+    /* .about-box-1{
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .about-text{
+        padding-left: 10px;
+    }
+    .test-cards{
+        width: 100%;
+    }
+
+    .simplify{
+        margin: 0;
+        height: 400px;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .simplify h2{
+        margin: 0;
+        width: 90%;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    /* .footer-nav{
+        
+    } */
+}
+
+@media (min-width: 1440px){
+    .mobile-only{
+        display: none;
+    }
+}
