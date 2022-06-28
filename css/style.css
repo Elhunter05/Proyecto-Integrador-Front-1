@@ -4,9 +4,9 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .flex-container{
@@ -19,6 +19,10 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: 80px 180px;
+}
+
+.logo-1{
+    width: 10rem;
 }
 
 .nav-item{
@@ -39,21 +43,21 @@ header{
 }
 
 .intro-item-1{
-    flex-direction: column;
-    align-items: flex-start;
-    width: 45%;
     /* border: 1px solid red; */
+    align-items: flex-start;
+    flex-direction: column;
     margin-right: 65px;
+    width: 45%;
 }
 
 .intro-item-2{
-    width: 55%;
     justify-content: flex-end;
+    width: 55%;
 }
 
 .intro-item-2 img{
-        width: 100%;
-    }
+    width: 100%;
+}
 
 /* .intro-title{
     border: 1px solid green;
@@ -69,16 +73,14 @@ header{
 
 .about-box-1{
     width: 50%;
-    outline: 1px solid red;
     flex-direction: column;
 }
-.about-box-1 p{
+.about-box-text{
     margin: 36px 220px 0px 0px;
 }
 
 .about-box-2{
     width: 50%;
-    outline: 1px solid blue;
 }
 .about-box-2 ul{
     flex-direction: column;
@@ -116,11 +118,10 @@ span{
 }
 
 .testimonials h2{
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 .test-cards{
-    outline: 1px solid blue;
     align-items: center;
     background-color: #FAFAFA;
 }
@@ -134,8 +135,10 @@ span{
 
 .card img{
     position: relative;
-    bottom: 75px;
-    margin: 0px 0px;
+    bottom: 45px;
+    left: 30px;
+    margin: 0px;
+    width: 60%;
 }
 
 .card-bottom{
@@ -155,12 +158,12 @@ span{
 
 .dots input[type="radio"] {
     appearance: none;
-    margin: 0px 5px;
-    color: white;
-    width: 0.75rem;
-    height: 0.75rem;
-    border: 0.07rem solid #F3603B;
     border-radius: 50%;
+    border: 0.07rem solid #F3603B;
+    color: white;
+    height: 0.75rem;
+    margin: 0px 5px;
+    width: 0.75rem;
 }
 
 .dots input:checked{
@@ -185,7 +188,6 @@ span{
     color: white;
     width: 50%;
     padding-right: 420px;
-    outline: 1px solid white;
 }
 
 .simplify button{
@@ -200,7 +202,7 @@ footer{
     background-color: #1E1E26;
     color: white;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 .social, .footer-nav, .suscribe{
@@ -210,16 +212,18 @@ footer{
 .social{
     /* margin: 67px 0px; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    outline: 1px solid white;
+    margin-left: 55px;
+    /* margin: 0px 0px 0px 55px; */
 }
 
 .logo-2{
     /* margin-bottom: 67px; */
     align-items: center;
     justify-content: center;
-    outline: 1px solid white;
+    width: 90%;
+
 }
 
 .footer-nav{
@@ -228,7 +232,9 @@ footer{
 
 .footer-nav a{
     color: white;
-    margin: 12px 0px;
+    /* margin: 12px 0px; */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .icons{
@@ -238,8 +244,9 @@ footer{
 }
 
 .fa-brands{
-    margin: 10px;
+    margin: 0px 10px;
     color: white;
+    font-size: 1.7rem;
 }
 
 .fa-brands:hover{
@@ -261,6 +268,8 @@ footer{
 input[type="email"]{
     border-radius: 50px;
     padding: 10px;
+    width: 15rem;
+    font-size: 0.9rem;
 }
 
 .go-btn:hover{
@@ -331,36 +340,39 @@ li{
 
 @media (max-width: 1439px) {
     .desk-only{
-    display: none;
+        display: none;
     }
-    header, .intro, .aboutUs, .testimonials,  .simplify, footer{
+    header{
         margin: 50px 40px;
+    }
+    .intro-title, .intro-text, .about-box-1 h2, .about-box-text, .testimonials h2, .card-text, .simplify h2{
+        text-align: center;
+    }
+    .intro, .intro-item-1, .intro-item-2, .aboutUs, .testimonials, .simplify, footer{
+        margin: 0;
+        width: 100%;
+    }
+    .intro-text, .about-box-text, .about-text, .card-text{
+        line-height: 35px;
     }
     .intro{
         flex-direction: column-reverse;
-        flex-wrap: wrap;
-        border: 1px solid black;
-        margin: 0;
         justify-content: center;
-    }
-    .intro-item-1, .intro-item-2{
-        width: 80%;
-        margin: 0;
     }
     .intro-item-1{
         align-items: center;
-        outline: 1px solid red;
-        margin: 0;
         justify-content: center;
     }
     .intro-title{
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
     }
     .intro-text{
-        justify-content: center;
         align-items: center;
-        margin-right: 0px;
+        color: #B9B9C1;
+        justify-content: center;
+        margin: 10px 12px 23px 12px;
     }
     .aboutUs, .testimonials, .simplify{
         flex-direction: column;
@@ -368,38 +380,79 @@ li{
     .about-box-1, .about-box-2{
         width: 100%;
     }
-    /* .about-box-1{
-        align-items: center;
-        justify-content: center;
-    } */
-
+    .about-box-1 h2{
+        margin: 90px 40px 0px 40px;
+        font-size: 1.8rem;
+    }
+    .about-box-text{
+        color: #B9B9C1;
+        margin: 25px 30px 40px 30px;
+        font-size: 0.9rem;
+    }
+    .about-item h4{
+        margin: 18px 5px;
+        background-color: rgba(245, 203, 193, 0.502);
+        font-size: 1rem;
+        padding: 10px 0px;
+    }
     .about-text{
-        padding-left: 10px;
+        padding: 0px 11px;
+        font-size: 0.8.5rem;
+        /* color: #B9B9C1; */
+    }
+    .testimonials h2{
+        margin: 30px 0px 100px 0px;
+        font-size: 1.8rem;
     }
     .test-cards{
         width: 100%;
     }
-
+    .card img{
+        bottom: 42px;
+    }
     .simplify{
-        margin: 0;
         height: 400px;
+        margin: 0;
         /* align-items: center; */
         /* justify-content: center; */
     }
-
     .simplify h2{
         margin: 0;
         width: 90%;
+        padding: 0;
+        font-size: 2.4rem;
     }
-
+    .simplify button{
+        position: relative;
+        bottom: 60px;
+    }
     footer{
         flex-direction: column-reverse;
         margin: 0;
+        outline: 1px solid green;
+        /* justify-content: center; */
+        align-items: center;
     }
+    .suscribe{
+        outline: 1px solid red;
+    }
+    .footer-nav{
+        outline: 1px solid blue;
+    }
+    .social{
+        outline: 1px solid white;
+        margin: 0;
+    }
+    
+    .logo-2{
 
-    /* .footer-nav{
-        
-    } */
+    }
+    .copyright{
+        position: relative;
+        bottom: -900px;
+        padding-bottom: 30px;
+        background-color: #1E1E26;
+    }
 }
 
 @media (min-width: 1440px){
