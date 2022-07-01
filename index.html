@@ -21,7 +21,8 @@
             <a class="nav-item" href="">Careers</a>
             <a class="nav-item" href="">Community</a>
         </nav>
-        <article class="btn-getStarted desk-only">
+
+        <article class="desk-only">
             <button type="submit">Get Started</button>
         </article>
         <article class="mobile-only">
@@ -30,7 +31,7 @@
     </header>
 
     <main>
-        <section class="flex-container intro" id="intro">
+        <section class="flex-container intro">
             <article class="flex-container intro-item-1">
                 <h1 class="intro-title">Bring everyone together to build better products.</h1>
                 <p class="intro-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view </p>
@@ -41,10 +42,10 @@
             </article>
         </section>
 
-        <section class="flex-container aboutUs" id="aboutUs">
+        <section class="flex-container aboutUs">
             <article class="flex-container about-box-1">
                 <h2>What's different about Manage?</h2>
-                <p class="about-box-text">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                <p class="about-box-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
             </article>
             <article class="about-box-2">
                 <ul class="flex-container">
@@ -64,7 +65,7 @@
             </article>
         </section>
 
-        <section class="flex-container testimonials" id="testimonials">
+        <section class="flex-container testimonials">
             <h2>What they've said</h2>
             <div class="flex-container test-cards">
                 <article class="flex-container card desk-only">
@@ -78,7 +79,7 @@
                         <div><img src="./img/avatar-ali.png" alt="avatar"></div>
                         <div  class="flex-container card-bottom">
                             <h4>Ali Bravo</h4>
-                            <p class="card-text">“We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”</p>
+                            <p class="card-text">“We have been able to cancel so many other subscriptions since using manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
                         </div>
                 </article>
                 <article class="flex-container card desk-only">
@@ -92,7 +93,7 @@
             <div>
                 <form class="flex-container dots mobile-only" action="">
                     <input type="radio" name="slider" id="">
-                    <input type="radio" name="slider" id="">
+                    <input type="radio" name="slider" id="" checked>
                     <input type="radio" name="slider" id="">
                     <input type="radio" name="slider" id="">
                 </form>
@@ -100,38 +101,42 @@
             </div>
         </section>
 
-        <section class="flex-container simplify" id="simplify">
+        <section class="flex-container simplify">
             <h2>Simplify how your team works today.</h2>
             <button type="submit">Get Started</button>
         </section>
     </main>
 
     <footer class="flex-container">
-        <article class="social">
-            <img class="logo-2" src="./img/logo-2.svg" alt="logo">
-            <ul class="flex-container icons">
+        <article class="flex-container social">
+            <div>
+                <img class="logo-2" src="./img/logo-2.svg" alt="logo">
+            </div>
+            <ul class="flex-container">
                 <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter-square"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-pinterest-square"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </article>
         <nav class="flex-container footer-nav">
-            <a href="">Home</a>
-            <a href="">Pricing</a>
-            <a href="">Products</a>
-            <a href="">About Us</a>
+            <ul class="flex-container footer-nav-item">
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Pricing</li>
+                <li><a href=""></a>Products</li>
+                <li><a href=""></a>About Us</li>
+            </ul>
+            <ul class="flex-container footer-nav-item">
+                <li><a href=""></a>Careers</li>
+                <li><a href=""></a>Community</li>
+                <li><a href=""></a>Privacy Policy</li>
+            </ul>
         </nav>
-        <nav class="flex-container footer-nav">
-            <a href="">Careers</a>
-            <a href="">Community</a>
-            <a href="">Privacy Policy</a>
-        </nav>
-        <article class="suscribe">
-            <form class="flex-container subscription" action="" method="">
-                <input type="email" name="subscription" id="subscription" placeholder="Update in your inbox...">
-                <button class="go-btn" type="submit">Go</button>
+        <article class="flex-container subscription">
+            <form class="flex-container subscription-form" action="" method="post">
+                <input type="email" name="subscription" placeholder="Update in your inbox..." required>
+                <button type="submit">Go</button>
             </form>
             <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </article>
